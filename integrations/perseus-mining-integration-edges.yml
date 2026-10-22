@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/perseus-mining/integrations
+- https://n8n.io/integrations/perseus-mining/
+- https://composio.dev/toolkits/perseus-mining
+- https://monid.ai/tools/perseus-mining
+checked:
+- https://perseusmining.com/ (200; API strings on the page are WordPress/plugin markup such as api.w.org and a reCAPTCHA
+  api.js, not a provider API)
+- https://zapier.com/apps/perseus-mining/integrations (404)
+- https://www.make.com/en/integrations/perseus-mining (403, not readable)
+- https://n8n.io/integrations/perseus-mining/ (404)
+- https://composio.dev/toolkits/perseus-mining
+- https://monid.ai/tools/perseus-mining
+- https://n8n.io/integrations/perseus-mining/
+- https://zapier.com/apps/perseus-mining/integrations
+summary: Perseus Mining is an ASX-listed gold producer with no public API, developer portal or integration/partner
+  app listings. No integration edges were found.
+marketplace_apps: []
+edges: []
+templates: []

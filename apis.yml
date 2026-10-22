@@ -1,23 +1,90 @@
 aid: perseus-mining
+
 name: Perseus Mining
-description: 'Perseus Mining is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Perseus Mining Limited is an Australian, ASX-listed (ASX: PRU) gold producer, developer and explorer focused
+  on Africa. It operates three gold mines - Edikan in Ghana, and Sissingué and Yaouré in Côte d''Ivoire - and is developing
+  the Nyanzaga Gold Project in Tanzania. Its website (perseusmining.com) publishes corporate, operations, sustainability and
+  investor information (ASX announcements, reports, presentations); no public developer API, API documentation or developer
+  portal was found on the site. Surfaced via the API Evangelist harvest backlog (australia-apidays-2026).'
+
 url: https://raw.githubusercontent.com/api-evangelist/perseus-mining/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Mining
+- Gold
+- Natural Resources
+- Australia
+- Africa
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://perseusmining.com/wp-content/uploads/2021/08/perseus-mining-logo-inverted-rgb-1500px@72ppi.png
+
 common:
+- type: WellKnown
+  url: well-known/perseus-mining-well-known.yml
+- type: Hosts
+  url: hosts/perseus-mining-hosts.yml
+- type: Vendors
+  url: vendors/perseus-mining-vendors.yml
+- type: DomainSecurity
+  url: security/perseus-mining-domain-security.yml
 - type: Website
   url: https://perseusmining.com/
+- type: Support
+  url: https://perseusmining.com/contact/
+- type: PrivacyPolicy
+  url: https://perseusmining.com/privacy-policy/
+- type: TermsOfService
+  url: https://perseusmining.com/supplier-terms-and-conditions/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/perseus-mining-limited/
+- type: Twitter
+  url: https://twitter.com/perseusmining
+- type: YouTube
+  url: https://www.youtube.com/channel/UCdl1vwjcblC4qhwPBsS4Rig
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website perseusmining.com verified (title "Home - Perseus Mining", og:description names Perseus Mining). No developer
+    portal, API docs, or API host found on the site; link pointers taken from the homepage navigation/footer.
+  evidence:
+  - url: https://perseusmining.com/
+    status: 200
+  - url: https://perseusmining.com/contact/
+    status: 200
+  - url: https://perseusmining.com/privacy-policy/
+    status: 200
+  - url: https://perseusmining.com/supplier-terms-and-conditions/
+    status: 200
+  - url: https://www.linkedin.com/company/perseus-mining-limited/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

@@ -1,0 +1,27 @@
+generated: '2026-10-22'
+method: none
+status: none
+search_result:
+  official_hosted_server: none
+  official_local_package: none
+  probes:
+  - url: https://perseusmining.com/.well-known/mcp.json
+    method: GET
+    status: 404
+  - url: https://perseusmining.com/llms.txt
+    method: GET
+    status: 404
+  - url: https://perseusmining.com/AGENTS.md
+    method: GET
+    status: 404
+  preflight: Pre-flight contract discovery (2026-10-22) on perseusmining.com and api.perseusmining.com reported openapi, asyncapi, graphql and mcp all absent; no MCP docs found (mcp_tool_table empty).
+  web_search: 'Search for "Perseus Mining" MCP server / API returned only unrelated projects named Perseus (@onbreeze/perseus-mcp Plaid wrapper, Perseus Computing perseus-ctx, tonyjurg/Perseus-mcp classics library); none is operated by or about Perseus Mining Limited.'
+  finding: Perseus Mining (ASX:PRU) is a gold producer with a corporate/investor website and no public developer API, OpenAPI contract or MCP server. No candidate tool list is derived because there are no API operations to ground one in.
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+tools: []

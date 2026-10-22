@@ -1,0 +1,67 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 2
+  other_domain: 0
+  platform: 3
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.perseusmining.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: perseusmining.com
+  role: api
+  relation: own
+- host: perseusmining.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Support
+  - PrivacyPolicy
+  - TermsOfService
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: perseusmining.com
+  role: website
+  relation: own
+- host: twitter.com
+  found_by:
+  - pointer
+  types:
+  - Twitter
+  serves: []
+  registrable_domain: twitter.com
+  role: other
+  relation: platform
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform

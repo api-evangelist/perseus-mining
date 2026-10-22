@@ -1,0 +1,48 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://perseusmining.com/privacy-policy/
+regime: Australian Privacy Principles (Commonwealth Privacy Act)
+signals:
+  data_subject_request:
+    url: https://perseusmining.com/privacy-policy/
+    section: '5. Access to and correction of personal information'
+    rights_named: [access, correction, complaint]
+    escalation: Office of the Australian Information Commissioner
+    evidence:
+    - source: https://perseusmining.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If you wish access to or correct any personal information we hold about you, please contact us at the
+        address set out below. We will not charge a fee for an access request but may charge reasonable expenses
+        we incur such as search and copying costs. If we refuse to provide access to or correct your personal
+        information, which we may only do in accordance with the Privacy Act, we will give you reasons for that decision.
+    - source: https://perseusmining.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        If we have not responded within a reasonable time or if your concerns are not resolved to your
+        satisfaction, you may under the Privacy Act make a complaint to the Office of the Australian Information Commissioner.
+    note: >-
+      Access and correction rights under the Australian Privacy Act, exercised by contacting the company, free of
+      fee except reasonable expenses, with reasons given for refusal and escalation to the OAIC. No deletion or
+      portability right and no response SLA are stated.
+  data_residency:
+    url: https://perseusmining.com/privacy-policy/
+    section: '4. Why personal information is collected, held, used and disclosed'
+    evidence:
+    - source: https://perseusmining.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        In limited circumstances personal information may be disclosed to overseas organisations, for example to
+        comply with foreign legal and regulatory requirements. Those overseas organisations may be located in
+        Ghana, Côte d’Ivoire, Canada and other countries.
+    note: >-
+      A cross-border disclosure statement (APP 8 style), not a residency commitment: personal information may
+      leave Australia for Ghana, Côte d'Ivoire, Canada and unnamed other countries.
+checked_without_signal:
+- url: https://perseusmining.com/supplier-terms-and-conditions/
+  http_status: 200
+  note: Supplier terms landing page; no privacy, data or AI clauses in its readable text.
